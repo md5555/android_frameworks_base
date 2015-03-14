@@ -1598,10 +1598,10 @@
 
     <!-- When true use the linux /dev/input/event subsystem to detect the switch changes
          on the headphone/microphone jack. When false use the older uevent framework. -->
-    <bool name="config_useDevInputEventForAudioJack">false</bool>
+    <bool name="config_useDevInputEventForAudioJack">true</bool>
 
     <!-- Whether safe headphone volume is enabled or not (country specific). -->
-    <bool name="config_safe_media_volume_enabled">true</bool>
+    <bool name="config_safe_media_volume_enabled">false</bool>
 
     <!-- Set to true if the wifi display supports compositing content stored
          in gralloc protected buffers.  For this to be true, there must exist
@@ -1624,7 +1624,7 @@
          This is being added to enable a simple scenario of pre-paid
          provisioning on some carriers, working around a bug (7305641)
          where if the preferred is used we don't try the others. -->
-    <bool name="config_dontPreferApn">false</bool>
+    <bool name="config_dontPreferApn">true</bool>
 
     <!-- The list of ril radio technologies (see ServiceState.java) which only support
          a single data connection at one time.  This may change by carrier via
